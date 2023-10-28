@@ -58,7 +58,7 @@ Android is a popular operating system for mobile devices developed by Google. It
 
 #### Activities
 
-An activity represents a `single screen` with a user interface, in-short Activity performs actions on the screen. 
+An activity represents a `single screen` with a user interface, in-short Activity performs actions on the screen.
 
 **For example**, an email application might have one activity that shows a list of `new emails`, another activity to `compose` an email, and another activity for `reading` emails. If an application has more than one activity, then one of them should be marked as the `activity` that is presented when the application is launched.
 
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 
 #### Services
 
-A service is a component that runs in the `background` to perform `long-running` operations. 
+A service is a component that runs in the `background` to perform `long-running` operations.
 
 For example, a service might play music in the background while the user is in a different application, or it might `fetch` data over the network without `blocking` user interaction with an activity.
 
@@ -128,11 +128,11 @@ The Android Emulator is a valuable `tool` for Android app developers. It allows 
 - Device Simulation
 - Operating System Versions
 
-### Dalvik Virtual Machine (DVM) 
+### Dalvik Virtual Machine (DVM)
 
 ---
 
-JVM itself is widely used and provides quite a high performance and better memory management. However, JVM is not compatible with working optimally with low-powered handheld devices like smartphones, tablets, smartwatches, etc.Due to this reason, the Android [Dalvik Virtual Machine](https://techvidvan.com/tutorials/android-dalvik-virtual-machine/) came into existence. 
+JVM itself is widely used and provides quite a high performance and better memory management. However, JVM is not compatible with working optimally with low-powered handheld devices like smartphones, tablets, smartwatches, etc.Due to this reason, the Android [Dalvik Virtual Machine](https://techvidvan.com/tutorials/android-dalvik-virtual-machine/) came into existence.
 
 A virtual machine is a software representation of an actual physical device. It implies that you don’t have a physical device but have a model in your system. The representation works quite similarly to how an actual physical device would work.
 
@@ -158,7 +158,7 @@ Dalvik Virtual Machine is configured to work on `low-powered` devices optimally.
 - The installation of the app takes more time due to the presence of Dex
 - You require more instructions than register machine to implement the same high-level code.
 
-### Android Runtime (ART) 
+### Android Runtime (ART)
 
 It is the runtime environment used by the Android operating system to run applications. ART is the `successor` to the earlier Dalvik Virtual Machine (DVM) and was introduced in Android 5.0 (Lollipop). ART offers several improvements over DVM and is designed to enhance the performance and efficiency of Android apps. Here are some key features and concepts related to ART:
 
@@ -222,15 +222,14 @@ Refer to a resource type that represents `graphics, images, icons, and other vis
 Refers to the XML files that define the structure and arrangement of user interface elements within an Android application. Layout files are used to create the visual representation of your app's user interface, specifying how different widgets and views are positioned and displayed on the screen.
 
 XML files that define a user interface layout. They are saved in `res/layout/` and accessed from the `R.layout` class.
-  
 
-- `LinearLayout` -  LinearLayout is a view group that arranges its child views either vertically (in a single column) or horizontally (in a single row). It's a simple and easy-to-use layout for creating linear arrangements of UI elements.
+- `LinearLayout` - LinearLayout is a view group that arranges its child views either vertically (in a single column) or horizontally (in a single row). It's a simple and easy-to-use layout for creating linear arrangements of UI elements.
 
-- `RelativeLayout` -  RelativeLayout allows you to specify the positioning of child views relative to one another or to the parent layout. It's versatile and useful for creating complex, rule-based UI designs.
+- `RelativeLayout` - RelativeLayout allows you to specify the positioning of child views relative to one another or to the parent layout. It's versatile and useful for creating complex, rule-based UI designs.
 
 - `GridLayout` - GridLayout is a flexible layout that allows you to create grid-based UIs with a specified number of rows and columns. It's ideal for responsive layouts.
 
-- `FrameLayout` -  FrameLayout is a simple layout that places its child views on top of one another. It's often used for creating layered UI elements.
+- `FrameLayout` - FrameLayout is a simple layout that places its child views on top of one another. It's often used for creating layered UI elements.
 
 #### values/
 
@@ -268,19 +267,17 @@ In C, C++ or Java programming language then you must have seen that your program
 
 ---
 
-A Fragment is a piece of an activity which enable more modular activity design. It will not be wrong if we say, a fragment is a kind of sub-activity. 
+A Fragment is a piece of an activity which enable more `modular` activity design. It is a modular and `reusable` component that represents a portion of a `user interface` or behavior within an activity. (`sub-activity`)
 
-A fragment has its own layout and its own behaviour with its own life cycle callbacks. You can `add or remove` fragments in an activity while  the activity is `running`. You can combine multiple fragments in a single activity to build a multi-pane UI. A fragment can be used in `multiple activities` Fragment life cycle is closely related to the life cycle of its host activity which means when the activity is paused, all the fragments available in the activity will also be stopped. A fragment can implement a behaviour that has `no user interface` component.
-
-
+A fragment has its own layout and its own behaviour with its own life cycle callbacks. You can `add or remove` fragments in an activity while the activity is `running`. You can combine multiple fragments in a single activity to build a multi-pane UI. A fragment can be used in `multiple activities` Fragment life cycle is closely related to the life cycle of its host activity which means when the activity is paused, all the fragments available in the activity will also be stopped. A fragment can implement a behaviour that has `no user interface` component.
 
 ![[Fragment](https://www.tutorialspoint.com/android/android_fragments.htm)](https://www.tutorialspoint.com/android/images/fragment.jpg)
 
-- Single frame fragments − Single frame fragments are using for hand hold devices like mobiles, here we can show only one fragment as a view.
+- `Single frame fragments` − Single frame fragments are using for hand hold devices like mobiles, here we can show only one fragment as a view.
 
-- List fragments − fragments having special list view is called as list fragment
+- `List fragments` − fragments having special list view is called as list fragment.
 
-- Fragments transaction − Using with fragment transaction. we can move one fragment to another fragment
+- `Fragments transaction` − Using with fragment transaction. we can move one fragment to another fragment.
 
 ### Intents and Filters
 
@@ -318,8 +315,202 @@ if (implicitIntent.resolveActivity(getPackageManager()) != null) {
 - Explicit intents are targeted and predictable, while implicit intents are action-based and rely on the Android system to find a suitable component to handle the action.
 - Explicit intents are often used for in-app navigation, while implicit intents are used for tasks like sharing data or opening external content.
 
+### Event handlers
 
-### References 
+In Android app development, event handling involves responding to **`user interactions`** within the app's user interface. Events include **`button clicks, screen touches, text input`**, and more. Event handlers are defined in Java or Kotlin and are associated with UI elements like buttons and text fields.
+
+**Event Listeners** − An event listener is an interface in the View class that contains a single callback method. These methods will be called by the Android framework when the View to which the listener has been registered is triggered by user interaction with the item in the UI.
+
+**Event Listeners Registration** − Event Registration is the process by which an Event Handler gets registered with an Event Listener so that the handler is called when the Event Listener fires the event.
+
+**Event Handlers** − When an event happens and we have registered an event listener for the event, the event listener calls the Event Handlers, which is the method that actually handles the event.
+
+```java
+Button myButton = findViewById(R.id.myButton);
+myButton.setOnClickListener {
+    Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show()
+}
+```
+
+```java
+// Event Handlers and Listners
+OnClickListener()
+OnLongClickListener()
+OnFocusChangeListener()
+OnFocusChangeListener()
+OnTouchListener()
+OnMenuItemClickListener()
+onCreateContextMenuItemListener()
+```
+
+### Toast in Android
+
+---
+
+In Android, a "Toast" is a simple and lightweight way to provide feedback or display short-lived messages to the user.
+
+Toasts typically appear as a small pop-up notification at the bottom of the screen, stay visible for a short duration, and then disappear. They are commonly used to display information, notifications, or brief messages to the user.
+
+```java
+Toast.makeText(context, "This is a Toast message", Toast.LENGTH_SHORT).show();
+```
+
+You can also customize the layout of a Toast by inflating a custom layout and displaying it within the Toast. This allows you to create more complex or styled notifications.
+
+```java
+LayoutInflater inflater = getLayoutInflater();
+View customLayout = inflater.inflate(R.layout.custom_toast_layout, null);
+
+Toast customToast = new Toast(getApplicationContext());
+customToast.setGravity(Gravity.CENTER, 0, 0);
+customToast.setDuration(Toast.LENGTH_LONG);
+customToast.setView(customLayout);
+customToast.show();
+```
+
+### Bundle
+
+---
+
+In Android app development, a `Bundle` is a container for passing data between components within an app or between `different` Android apps.
+
+It's a `key-value pair` collection that is used to store and transfer data, such as primitive data types (int, boolean, etc.), complex objects, or more commonly, data that needs to be passed between `activities` or fragments.
+
+- Passing Data Between Activities
+- Passing Data Between Fragments
+- Saving and Restoring State
+- Inter-Process Communication (IPC)
+
+```java
+Intent intent = new Intent(this, SecondActivity.class);
+Bundle bundle = new Bundle();
+bundle.putString("key", "github.com/meharehsaan");
+intent.putExtras(bundle);
+startActivity(intent);
+```
+
+In second activity getting bundle
+
+```java
+Bundle bundle = getIntent().getExtras();
+if (bundle != null) {
+    String data = bundle.getString("key");
+}
+```
+
+### Views and Controls
+
+---
+
+`Views` are a fundamental concept in the design of `user interfaces`, and they can serve various purposes, including displaying information, receiving user input, and presenting data in a structured format.
+
+- **TextView, EditText, Button, CheckBox, RadioButton, Spinner, ListView, RecyclerView, GridView, ScrollView, CalendarView etc**
+
+`Controls` typically refer to `user interface` elements or components that users interact with to perform actions, input data, or make selections within an application. Controls are essential for creating a `user-friendly` and functional software interface. The specific controls available may vary depending on the platform or framework being used.
+
+- **Slider, Progress Bar, Switch, Checkbox, Text Field etc**
+
+### Recycler View
+
+---
+
+A `RecyclerView` is a powerful and flexible UI component used to display `lists` and `grids of items`. It's an advanced replacement for the older `ListView` and `GridView` components, offering improved performance and greater control over the presentation of data.
+
+The RecyclerView is a key element for efficiently displaying large data sets in a `scrollable` and `reusable` manner.
+
+- `Adapter` - Create a custom adapter that extends `RecyclerView.Adapter` and provides data to the RecyclerView. Override methods like **onCreateViewHolder**() and **onBindViewHolder**() to create and bind views for each item and **getItem**().
+
+- `ViewHolder` - Create a **ViewHolder** class that holds references to the views in each item. This reduces the **overhead** of finding views repeatedly.
+
+- `LayoutManager` - Set the desired layout manager for the RecyclerView. For example, **LinearLayoutManager** for a vertical list.
+
+- `Activity/Fragment Code` - In your activity or fragment, **initialize** the RecyclerView, set the adapter, and configure it as needed:
+
+```java
+RecyclerView recyclerView = findViewById(R.id.recyclerView);
+MyAdapter adapter = new MyAdapter(dataList); // Your custom adapter
+recyclerView.setLayoutManager(new LinearLayoutManager(this));
+recyclerView.setAdapter(adapter);
+```
+
+```xml
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+/>
+```
+
+### Design Patterns
+
+---
+
+Design patterns are reusable solutions to common `problems` that occur during software design and `development`. They provide a template or a general `guideline` for `structuring` code to solve specific types of problems in a `consistent` and efficient way.
+
+- **Creational Patterns**
+  - Singleton Pattern
+  - Builder Pattern
+  - Prototype Pattern
+- **Structural Patterns**
+  - Adapter Pattern
+  - Decorator Pattern
+  - Proxy Pattern
+- **Behavioral Patterns**
+  - Observer Pattern
+  - Strategy Pattern
+  - Chain of Responsibility Pattern
+
+#### Singelton
+
+Ensures a class has only `one instance` and provides a `global` point of access to that instance. It is used when you want to limit the `instantiation` of a class to a single object and maintain a single point of access to that object throughout the `lifetime` of an application.
+
+```java
+public class Singleton {
+    private static Singleton instance;
+    private Singleton() { // ----- }
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+        return instance;
+    }
+}
+```
+
+- Private Constructor.
+- Static reference of class.
+- One Static method.
+- Globally excess object reference.
+- Consistency across thread.
+
+### Serialization and parcelable
+
+---
+
+Serialization and Parcelable are used to `pass data` between different components, such as between activities or between the app and external storage. They serve the same purpose of converting objects into a `format` that can be easily `transported` or persisted and then `reconstructing` those objects from the `stored` format.
+
+#### Serialization
+
+Serialization is a Java-based mechanism for converting an object's state (including its fields) into a byte stream. It is part of the Java standard library and can be used in Android.
+
+In Java's built-in serialization when saving and restoring objects to/from files, databases, or when sending data across networks using Java's Object Input/Output Streams.
+
+- Serialization works with Java objects, and it serializes the entire object, including its methods and fields.
+- Uses `memory` so less efficient.
+
+#### Parcelable
+
+Parcelable is an Android-specific mechanism designed for `efficiently` passing data between Android components. It is optimized for `performance` on the Android platform.
+
+Parcelable is commonly used to pass data between Android `activities and fragments` or when transferring data between different parts of an Android app, such as in `Intent extras`.
+
+- Uses bundle instead of **memory** become more efficients.
+
+### References
 
 ---
 
