@@ -52,6 +52,21 @@ Android is a popular operating system for mobile devices developed by Google. It
 
 ![Architecture](https://www.tutorialspoint.com/android/images/architecture.jpg)
 
+### Setup Android Studio
+
+---
+
+- Install Java Development Kit (**JDK**).
+- Download and **Install** Android Studio.
+- Install Android SDK and Build Tools.
+- Configure **SDK** Platforms and Tools.
+- Create or Open a Project.
+- Emulator or **Physical** Device Setup.
+- **Coding** and Designing in Android Studio.
+- Testing and Debugging.
+- Building and Packaging.
+- **Publishing** the App.
+
 ### Application Components
 
 ---
@@ -398,7 +413,7 @@ if (bundle != null) {
 }
 ```
 
-### Views and Controls
+### Views, Controls and Spinner
 
 ---
 
@@ -409,6 +424,8 @@ if (bundle != null) {
 `Controls` typically refer to `user interface` elements or components that users interact with to perform actions, input data, or make selections within an application. Controls are essential for creating a `user-friendly` and functional software interface. The specific controls available may vary depending on the platform or framework being used.
 
 - **Slider, Progress Bar, Switch, Checkbox, Text Field etc**
+
+A `Spinner` is a **UI widget** in Android that allows the user to select an item from a dropdown list. It's often used to display a list of options, and the user can choose one by tapping on it.
 
 ### Recycler View
 
