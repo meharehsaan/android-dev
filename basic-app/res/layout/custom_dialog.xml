@@ -1,0 +1,52 @@
+<!-- res/layout/custom_dialog.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#2196F3"
+    android:padding="16dp">
+
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/baseline_123_24"
+    android:layout_gravity="center"/>
+
+    <!-- Success Message -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="34sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/messageTextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom dialog created successfully"
+        android:textStyle="bold"
+        android:textColor="#000234"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- OK Button -->
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:backgroundTint="#000"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"/>
+</LinearLayout>

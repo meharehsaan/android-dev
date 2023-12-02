@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">myapp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="countries_array">
+        <item>Pakistan </item>
+        <item>India</item>
+        <item>China</item>
+        <item>Usa</item>
+        <item>UK</item>
+        <!-- Add more countries as needed -->
+    </string-array>
+</resources>

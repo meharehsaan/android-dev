@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5B1BD">
+
+    <!-- Fixed Toolbar with Background Color -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#E93118"
+        android:elevation="40dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Button for "Recycler View" with Animation -->
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@color/red"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Recycler View"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Toast"
+        android:textColor="#212121" />
+
+    <Button
+        android:id="@+id/notifybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:background="#e74c3c"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Notification"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Dialog Box"
+        android:textColor="#212121" />
+
+    <Button
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Calculator"
+        android:textColor="#212121" />
+
+    <Button
+        android:id="@+id/form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Form"
+        android:textColor="#212121" />
+
+    <Button
+        android:id="@+id/dynamicfragments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="490dp"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Dynamic Fragments"
+        android:textColor="#212121" />
+
+    <Button
+        android:id="@+id/sharedp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="Shared Preference"
+        android:textColor="#212121" />
+
+<!--    <Button-->
+<!--        android:id="@+id/Api"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="630dp"-->
+<!--        android:background="#2196F3"-->
+<!--        android:padding="16dp"-->
+<!--        android:stateListAnimator="@null"-->
+<!--        android:text="Api"-->
+<!--        android:textColor="#212121" />-->
+
+
+
+</RelativeLayout>
